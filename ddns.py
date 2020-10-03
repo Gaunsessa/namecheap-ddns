@@ -5,7 +5,7 @@ import time
 DOMAIN        = "myurl.tld" # Domain name without prefix or http
 DOMAIN_PREFIX = "prefix" # Domain name prefix (full url would be prefix.myurl.tld)
 PASSWORD      = "1273abcdef69420aaaaaaaaaaaaaaaaa" # Namecheap ddns password
-LOOP_TIME     = 600 #Time before each ip update in milliseconds
+LOOP_TIME     = 600 # Time before each ip update in secs
 
 p_ip = socket.gethostbyname(f'{DOMAIN_PREFIX}.{DOMAIN}')
 
